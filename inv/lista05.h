@@ -12,12 +12,16 @@
 #ifndef __LISTA05_H_
 #define __LISTA05_H_
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-void identificandoOMenorElemento(int *const vetor, const int qtd);
+void ordenandoVetorDecrescente(int *const vetor, const int qtd);
 void gerarElementos(int *const vetor, const int qtd);
+void normalizaVetor(int *const vetor, const int valorMax, const int valorMin, const int qtd);
+void imprimindoVetor(const int *const vetor, const int qtd);
+
+void gerarDecimaisVetores(float *const vetor, const int qtd);
+float somaDosElementosVetores(float *const vetor, const int qtd);
 
 #endif // __LISTA05_H_

@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
     gerarElementos( vetor, qtd);
 
     puts("identificando o  menor elemento");
-    identificandoOMenorElemento(vetor, qtd);
+    ordenandoVetorDecrescente(vetor, qtd);
     printf("%d \n", *(vetor+qtd-1));
 
     return 0;
