@@ -1,22 +1,40 @@
 #include "lista05.h"
 
-float mediana(const int *const vetor, const int qtd)
+void mediana(const int qtd)
 {   
     float medianaValue = 0;
-    int aux;
-    // elementos de quantidade par
+
+    // se o numero for par
     if(!(qtd % 2)){
-        // verificando se 
-        for(int i = 0; i < qtd; i++){
-            aux = 2*i+1;
-            if(aux == qtd - 1){
-                medianaValue = (*(vetor+i) + *(vetor + i + 1))/ 2; 
-                return medianaValue;
-            }
-        }
-       
+        medianaValue = ((qtd / 2) + (qtd/2 - 1))/2;
+        printf(" MEDIANA: %.2f", medianaValue);
+        return;
     }
 
-    return medianaValue;
-    
+    // se a quantidade for impar
+    medianaValue = qtd/2 + 1;
+    printf("MEDIANA: %.2f \n", medianaValue);
+    return;
 }
+
+void media( const int *const vetor, const int qtd){
+    float mediaValue = 0;
+
+    for(int i = 0; i < qtd; i++){
+        mediaValue += *(vetor+i);
+    }
+    printf(" MEDIA: %.2f \n", (mediaValue/qtd)); 
+}
+
+// void moda ( const int *const vetor, const int qtd, const int maiorElemento){
+//     int *vetorOcor;
+
+//     vetorOcor = calloc(maiorElemento, sizeof(int));
+    
+//     // fazendo ocorrências
+//     for(int i = 0; i < qtd; i++ )
+//     {
+//         ++*(vetorOcor + (*(vetor + i)));
+//     }
+
+// }

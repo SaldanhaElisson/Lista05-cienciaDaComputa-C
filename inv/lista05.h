@@ -24,4 +24,8 @@ void imprimindoVetor(const int *const vetor, const int qtd);
 void gerarDecimaisVetores(float *const vetor, const int qtd);
 float somaDosElementosVetores(float *const vetor, const int qtd);
 
+void mediana(const int qtd);
+void media( const int *const vetor, const int qtd);
+// void moda( const int * const vetor, const int qtd, const int maiorElemento);
+
 #endif // __LISTA05_H_

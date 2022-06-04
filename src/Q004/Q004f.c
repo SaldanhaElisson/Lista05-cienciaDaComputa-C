@@ -11,7 +11,10 @@ void normalizaVetor(int *const vetor, const int valorMax, const int valorMin, co
 }
 
 void imprimindoVetor(const int *const vetor, const int qtd){
+    printf("[");
     for(int i = 0; i < qtd; i++){
         printf("%d, ", *(vetor+i));
     }
+
+    printf(" ] \n");
 }

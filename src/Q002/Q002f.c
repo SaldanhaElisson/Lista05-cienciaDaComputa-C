@@ -16,7 +16,6 @@ void ordenandoVetorDecrescente(int *const vetor, const int qtd){
         }
     }
 }
-
 void gerarElementos(int *const vetor, const int qtd){
     srand(time(NULL));
     for(int i = 0; i < qtd; i++){
