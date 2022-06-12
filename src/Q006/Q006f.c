@@ -3,14 +3,12 @@
 void mediana(const int qtd)
 {   
     float medianaValue = 0;
-
     // se o numero for par
     if(!(qtd % 2)){
         medianaValue = ((qtd / 2) + (qtd/2 - 1))/2;
         printf(" MEDIANA: %.2f", medianaValue);
         return;
     }
-
     // se a quantidade for impar
     medianaValue = qtd/2 + 1;
     printf("MEDIANA: %.2f \n", medianaValue);
